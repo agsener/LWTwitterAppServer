@@ -18,8 +18,11 @@ public class Shared extends BaseEntity {
     @GeneratedValue(strategy = GenerationType.AUTO)
     private Long id;
 
-    @Column(name = "photo", length = 400)
-    private String photoId;
+    @Column(name = "photo_uuid", length = 400)
+    private String photoUuid;
+
+    @Column(name = "photo_base64")
+    private String photoBase64;
 
     @Column(name = "comment", length = 280)
     private String comment;

@@ -12,7 +12,8 @@ import java.util.Date;
 public class SharedDto {
 
     private Long id;
-    private String photoId;
+    private String photoUuid;
+    private String photoBase64;
     private String comment;
     private Date date;
     private Long rate;
