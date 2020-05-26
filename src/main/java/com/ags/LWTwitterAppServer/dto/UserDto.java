@@ -13,6 +13,6 @@ public class UserDto {
     private String username;
     private String firstName;
     private String surname;
-    private String profilPictureId;
     private String email;
+    private String profilPictureBase64;
 }

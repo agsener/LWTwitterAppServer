@@ -9,11 +9,11 @@ import java.util.Date;
 @Data
 @AllArgsConstructor
 @NoArgsConstructor
-public class SharedDto {
+public class SharedPostDto {
 
     private String photoBase64;
     private String comment;
     private Date date;
     private Float rate;
-    private UserDto owner;
+    private Long ownerId;
 }

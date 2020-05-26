@@ -31,7 +31,7 @@ public class Shared extends BaseEntity {
     private Date date;
 
     @Column(name = "rate")
-    private Long rate;
+    private Float rate;
 
     @JoinColumn(name = "owner")
     @ManyToOne(optional = true, fetch = FetchType.LAZY)

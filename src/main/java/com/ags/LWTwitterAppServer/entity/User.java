@@ -34,7 +34,10 @@ public class User extends BaseEntity {
     private String email;
 
     @Column(name = "profil_picture", length = 100, unique = true)
-    private String profilPictureId;
+    private String profilPictureUuid;
+
+    @Column(name = "profil_picture_base64")
+    private String profilPictureBase64;
 
     @OneToMany(fetch = FetchType.LAZY)
     private List<Shared> sharedItems;
